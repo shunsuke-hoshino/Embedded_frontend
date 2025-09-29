@@ -1,0 +1,119 @@
+.path-display-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  min-height: 200px;
+}
+
+.path-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.path-header h3 {
+  color: #1e293b;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.send-button {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  min-width: 120px;
+}
+
+.send-button:hover:not(:disabled) {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.send-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.status-display {
+  margin-bottom: 20px;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.status.待機中 {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.送信中 {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status.完了 {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status.エラー {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.path-info {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.path-info p {
+  margin: 5px 0;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.path-coordinates {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #2563eb;
+}
+
+.path-coordinates h4 {
+  margin: 0 0 10px 0;
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.coordinates-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.coordinate-item {
+  padding: 4px 8px;
+  margin: 2px 0;
+  background: white;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #374151;
+}
